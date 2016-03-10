@@ -1,0 +1,295 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+#header {
+    background-color:black;
+    color: white;
+    text-align:left;
+    padding:0px;
+    height: 40px;
+    font-family: fantasy;
+    font-size: 40px;
+}
+
+#header button {
+    background: transparent;
+    font-size: 30px;
+    border: none !important;
+    color: cyan;
+    font-family: monospace;
+    position: absolute;
+    top: 2px;
+}
+
+#homeLink {
+    position:absolute;
+    right:0;
+    font-size: 1vw;
+    top: 5px;
+    color: white;
+}
+
+.footer {
+    height: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.footer a:link {
+    color: floralwhite;
+}
+
+.footer a:visited {
+    color: floralwhite;
+}
+
+#colorPicker {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+}
+
+.color {
+    width: 2vw;
+    margin: 3px;
+    border-radius: 5px;
+    border: solid 1px black;
+    height: 2vw;
+}
+
+.color.selected {
+    border: solid 3px black;
+    border-radius: 10px;
+}
+
+.dark-text {
+    color: black;
+}
+
+.light-text {
+    color: white;
+}
+
+#playerArea {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    -webkit-align-content: stretch;
+    align-content: stretch;
+    height: calc(100% - 90px);
+}
+
+.shrunk {
+    height: calc(50% - 80px);
+}
+
+#newPlayerArea {
+    visibility: visible;
+}
+
+#newPlayer span {
+    font-family: fantasy;
+    font-size: 3vw;
+}
+
+#newPlayer input {
+    height: 3vw;
+}
+
+
+.tracker {
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+    height: calc(100%);
+    -webkit-flex: 1 0 calc(100%);
+    flex: 1 0 calc(100%);
+    border-radius: 25px;
+    margin: 5px 5px 5px 5px;
+}
+
+.tracker.row-2 {
+    height: calc(50% - 5px);
+}
+
+.tracker.col-2 {
+    -webkit-flex: 1 0 calc(50% - 10px);
+    flex: 1 0 calc(50% - 10px);
+}
+
+.tracker.row-3 {
+    height: calc(33% - 5px);
+}
+
+.tracker.col-3 {
+    -webkit-flex: 1 0 calc(33%);
+    flex: 1 0 calc(33%);
+}
+
+.tracker.row-4 {
+    height: calc(25% - 5px);
+}
+
+.tracker.col-4 {
+    -webkit-flex: 1 0 calc(25% - 10px);
+    flex: 1 0 calc(25% - 10px);
+}
+
+.tracker.row-5 {
+    height: calc(20% - 5px);
+}
+
+.tracker.col-5 {
+    -webkit-flex: 1 0 calc(20% - 10px);
+    flex: 1 0 calc(20% - 10px);
+}
+
+.firstRow {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    -webkit-flex-wrap: nowrap;
+    -webkit-flex-direction: row;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.nameArea {
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+    flex: 5 0 90%;
+    -webkit-flex: 5 0 90%;
+    text-align: center;
+    margin: auto;
+    font-size: 3vh;
+    font-family: sans-serif;
+}
+
+.deletePlayer {
+    flex: 1 0 auto;
+    -webkit-flex: 1 0 auto;
+    border-radius: 50%;
+    color: white;
+    background-color: red;
+    font-size: 250%;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.secondRow {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 85%;
+    align-content: stretch;
+    -webkit-flex-wrap: nowrap;
+    -webkit-flex-direction: row;
+    -webkit-align-content: stretch;
+}
+
+.modArea {
+    display: -webkit-flex;
+    -webkit-flex-wrap: nowrap;
+    -webkit-flex-direction: column;
+    -webkit-justify-content: space-between;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 15%;
+}
+
+.quick {
+    -webkit-flex: 0 0 15%;
+    flex: 0 0 15%;
+    margin: auto;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2.5vh;
+}
+
+.modButton {
+    -webkit-flex: 1 0 15%;
+    flex: 1 0 15%;
+    margin: auto;
+    text-align: center;
+    font-size: 5vw;
+}
+
+.healthArea {
+    -webkit-flex: 1 0 25%;
+    flex: 1 0 25%;
+    margin: auto;
+    text-align: center;
+    font-size: 15vw;
+}
+
+.healthArea.row-2 {
+    font-size: 11vw;
+}
+.healthArea.row-3 {
+    font-size: 8vw;
+}
+.healthArea.row-4 {
+    font-size: 5vw;
+}
+.healthArea.row-5 {
+    font-size: 4vw;
+}
+
+@media only screen and (max-width: 1000px){
+    .quick {
+        font-size: 2vw;
+    }
+    
+    .footer {
+        height: 2vw;
+        font-size: 20px; font-size: 0.04rem; 
+    }
+    
+    .footer img {
+        height: 2vw;
+    }
+    
+    .tracker {
+        margin: 1px 1px 1px 1px;
+    }
+    
+    #playerArea {
+        height: calc(100% - 4vw);
+    }
+    
+    #header {
+        top: 2px;
+        font-size: 10px; font-size: 0.08rem;
+        height: 3vw;
+    }
+    
+    #header button {
+        font-size: 10px; font-size: 0.08rem;
+    }
+}
+

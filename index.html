@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- A basic health pool or point tracker for use in various games. -->
+<html>
+    <head>
+        <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/flex.css" type="text/css" media="screen" charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+    </head>
+    <body>
+        <div id="header">
+            Health or Point Tracker
+            <span>&nbsp;</span>
+            <button name="new_player" onclick="showNewPlayerArea()">Add New Player</button>
+            <a id="homeLink" href="http://www.gamergadgets.net">Home</a>
+        </div>
+        <div id="newPlayer">
+            <span>Name: </span>
+            <input type="text" maxlength="15" id="name"></input>
+            <span>Starting Health: </span>
+            <input type="number" max="9999" id="health"></input>
+            <br>
+            <span>Color: </span>
+            <ul id="colorPicker"> 
+                
+            </ul>
+            <button onclick="addPlayer()">Add Player</button>
+        </div>
+        <div id="playerArea">
+            
+        </div>
+        <div class="footer">
+            <p class="text-muted">Site designed by <a href="/rob.php">Robert Thayer</a>.  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+        </footer>
+        <script type="text/javascript" src="js/tracker.js"></script>
+    </body>
+</html>
